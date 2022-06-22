@@ -3,12 +3,12 @@ import { loadFull } from "tsparticles";
 
 const Particle = () => {
   const particlesInit = async (main) => {
-    console.log(main);
+    // console.log(main);
     await loadFull(main);
   };
 
   const particlesLoaded = (container) => {
-    console.log(container);
+    // console.log(container);
   };
   return (
     <Particles
@@ -40,7 +40,7 @@ const Particle = () => {
               quantity: 4,
             },
             repulse: {
-              distance: 200,
+              distance: 100,
               duration: 0.4,
             },
           },
@@ -72,9 +72,9 @@ const Particle = () => {
           number: {
             density: {
               enable: true,
-              area: 800,
+              area: 500,
             },
-            value: 120,
+            value: 70,
           },
           opacity: {
             value: 0.5,
